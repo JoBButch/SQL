@@ -1,0 +1,21 @@
+CREATE TABLE Cup_of_Jo (id INTEGER PRIMARY KEY, Menu text,Price INTEGER,Serve_Time INTEGER,Popularity INTEGER,Inventory INTEGER); 
+
+INSERT INTO Cup_of_Jo VALUES (1, "Caramel Latte", 3.75, 5, 4, 257);
+INSERT INTO Cup_of_Jo VALUES (2, "Mocha Latte", 3.75, 5,6, 306);
+INSERT INTO Cup_of_Jo VALUES (3, "Iced Caramel Latte", 4.50, 6, 8, 323);
+INSERT INTO Cup_of_Jo VALUES (4, "Iced Mocha Latte", 4.50, 6, 8, 294);
+INSERT INTO Cup_of_Jo VALUES (5, "Americano", 2.80, 3, 2, 94);
+INSERT INTO Cup_of_Jo VALUES (6, "Lavendar Love Frappucino", 6.75, 7, 10, 630);
+INSERT INTO Cup_of_Jo VALUES (7, "Haywire Hazelnut Frappucino", 6.75, 6.30, 9, 529);
+INSERT INTO Cup_of_Jo VALUES (8, "Crazy Chocolate Corral Frappucino", 6.95, 6.30, 10, 483);
+INSERT INTO Cup_of_Jo VALUES (9, "Cup of Jo", 2.95, 2.30, 5, 209);
+INSERT INTO Cup_of_Jo VALUES (10, "Crazy Chocolate Chunk Brownie", 3.95, 0.55, 6, 35);
+INSERT INTO Cup_of_Jo VALUES (11, "Croissant pour mon Coeur", 5.00, 2,9, 60);
+INSERT INTO Cup_of_Jo VALUES (12, "Kookie Coffee Monkey Cake", 4.25, 0.30, 7, 45); 
+INSERT INTO Cup_of_Jo VALUES (13, "Beloved Banana Bread", 2.99, 0.30, 4, 35);
+INSERT INTO Cup_of_Jo VALUES (14, "Cup of Jo Coffee Mug", 7.99, 0.25, 7, 55);
+INSERT INTO Cup_of_Jo VALUES (15, "Cup of Jo Tumbler", 10.99, 0.25, 9, 75); 
+
+SELECT Price FROM Cup_of_Jo ORDER BY Price;
+SELECT * FROM Cup_of_Jo;
+SELECT SUM (Popularity) FROM Cup_of_Jo
